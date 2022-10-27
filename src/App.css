@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  margin: 100px auto;
 }
 
 .App-logo {
@@ -35,4 +36,35 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+#alert{
+  width: 20%;
+  margin:20px auto;
+}
+
+.bubble{
+  position: relative;
+  background-color: #69edf9;
+  border-radius: .4em;
+  width: 200px;
+  margin:auto;
+  padding: 10px;
+  margin-bottom: 30px;
+
+}
+
+.bubble:after{
+  content: "";
+  position: absolute;
+  bottom:0;
+  left: 50%;
+  width: 0;
+  height: 0;
+  border: 20px solid transparent;
+  border-top-color: #69edf9;
+  border-bottom: 0;
+  border-left: 0;
+  margin-left: -10px;
+  margin-bottom: -20px;
 }
